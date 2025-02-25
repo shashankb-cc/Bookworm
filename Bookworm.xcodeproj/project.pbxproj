@@ -13,6 +13,8 @@
 		99F0145F2D6D7692009C705F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F0145E2D6D7692009C705F /* Preview Assets.xcassets */; };
 		99F014692D6D8635009C705F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F014682D6D8635009C705F /* Book.swift */; };
 		99F0146C2D6D86E9009C705F /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0146B2D6D86E9009C705F /* AddBookView.swift */; };
+		99F0146E2D6D8AEF009C705F /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0146D2D6D8AEF009C705F /* RatingView.swift */; };
+		99F014702D6D8E99009C705F /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0146F2D6D8E99009C705F /* EmojiRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		99F0145E2D6D7692009C705F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99F014682D6D8635009C705F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		99F0146B2D6D86E9009C705F /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		99F0146D2D6D8AEF009C705F /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		99F0146F2D6D8E99009C705F /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				99F0146B2D6D86E9009C705F /* AddBookView.swift */,
+				99F0146D2D6D8AEF009C705F /* RatingView.swift */,
+				99F0146F2D6D8E99009C705F /* EmojiRatingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +168,8 @@
 				99F0145A2D6D768F009C705F /* ContentView.swift in Sources */,
 				99F014582D6D768F009C705F /* BookwormApp.swift in Sources */,
 				99F014692D6D8635009C705F /* Book.swift in Sources */,
+				99F0146E2D6D8AEF009C705F /* RatingView.swift in Sources */,
+				99F014702D6D8E99009C705F /* EmojiRatingView.swift in Sources */,
 				99F0146C2D6D86E9009C705F /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
