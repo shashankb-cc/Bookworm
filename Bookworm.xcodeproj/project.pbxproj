@@ -11,7 +11,8 @@
 		99F0145A2D6D768F009C705F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F014592D6D768F009C705F /* ContentView.swift */; };
 		99F0145C2D6D7692009C705F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F0145B2D6D7692009C705F /* Assets.xcassets */; };
 		99F0145F2D6D7692009C705F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F0145E2D6D7692009C705F /* Preview Assets.xcassets */; };
-		99F014662D6D8054009C705F /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F014652D6D8054009C705F /* Student.swift */; };
+		99F014692D6D8635009C705F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F014682D6D8635009C705F /* Book.swift */; };
+		99F0146C2D6D86E9009C705F /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0146B2D6D86E9009C705F /* AddBookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +21,8 @@
 		99F014592D6D768F009C705F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		99F0145B2D6D7692009C705F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99F0145E2D6D7692009C705F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		99F014652D6D8054009C705F /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		99F014682D6D8635009C705F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		99F0146B2D6D86E9009C705F /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +55,12 @@
 		99F014562D6D768F009C705F /* Bookworm */ = {
 			isa = PBXGroup;
 			children = (
+				99F0146A2D6D86DF009C705F /* Views */,
+				99F014672D6D8629009C705F /* Models */,
 				99F014572D6D768F009C705F /* BookwormApp.swift */,
 				99F014592D6D768F009C705F /* ContentView.swift */,
 				99F0145B2D6D7692009C705F /* Assets.xcassets */,
 				99F0145D2D6D7692009C705F /* Preview Content */,
-				99F014652D6D8054009C705F /* Student.swift */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -68,6 +71,22 @@
 				99F0145E2D6D7692009C705F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99F014672D6D8629009C705F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99F014682D6D8635009C705F /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99F0146A2D6D86DF009C705F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99F0146B2D6D86E9009C705F /* AddBookView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				99F0145A2D6D768F009C705F /* ContentView.swift in Sources */,
-				99F014662D6D8054009C705F /* Student.swift in Sources */,
 				99F014582D6D768F009C705F /* BookwormApp.swift in Sources */,
+				99F014692D6D8635009C705F /* Book.swift in Sources */,
+				99F0146C2D6D86E9009C705F /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
