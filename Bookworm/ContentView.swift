@@ -6,33 +6,36 @@
 //
 
 import SwiftUI
-
-struct PushButton: View {
-    let title: String
-    @Binding var isOn: Bool
-
-    var onColors = [Color.red, Color.yellow]
-    var offColors = [Color(white: 0.6), Color(white: 0.4)]
-
-    var body: some View {
-        Button(title) {
-            isOn.toggle()
-        }
-        .padding()
-        .background(LinearGradient(colors: isOn ? onColors : offColors, startPoint: .top, endPoint: .bottom))
-        .foregroundStyle(.white)
-        .clipShape(.capsule)
-        .shadow(radius: isOn ? 0 : 50)
-    }
-}
+import SwiftData
 
 struct ContentView: View {
-    @State private var rememberMe = false
-
+    //we need a new property to access the model context that was created earlier.
+//    The model context is the “live” data environment in SwiftData.
+//    It holds in-memory changes until they are saved to the database.
+//    Automatically created by SwiftData when using modelContainer().
+//    Accessible via @Environment(\.modelContext) in SwiftUI.
+    @Environment(\.modelContext) var modelContext
+    @Query var students: [Student]
     var body: some View {
-        VStack {
-            PushButton(title: "Remember Me", isOn: $rememberMe)
-            Text(rememberMe ? "On" : "Off")
+        NavigationStack {
+            List(students) { student in
+                Text(student.name)
+            }
+            .navigationTitle("Classroom")
+            .toolbar {
+                Button("Add") {
+                    let firstNames = ["Ginny", "Harry", "Hermione", "Luna", "Ron"]
+                    let lastNames = ["Granger", "Lovegood", "Potter", "Weasley"]
+
+                    //we literally just hand-created the arrays to have values – it will always succeed. If you desperately hate force unwraps, perhaps replace them with nil coalescing and default values.
+                    
+                    let chosenFirstName = firstNames.randomElement()!
+                    let chosenLastName = lastNames.randomElement()!
+
+                    let student = Student(id: UUID(), name: "\(chosenFirstName) \(chosenLastName)")
+                    modelContext.insert(student)
+                }
+            }
         }
     }
 }
