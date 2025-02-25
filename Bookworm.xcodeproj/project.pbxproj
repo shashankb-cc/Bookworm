@@ -15,6 +15,7 @@
 		99F0146C2D6D86E9009C705F /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0146B2D6D86E9009C705F /* AddBookView.swift */; };
 		99F0146E2D6D8AEF009C705F /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0146D2D6D8AEF009C705F /* RatingView.swift */; };
 		99F014702D6D8E99009C705F /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0146F2D6D8E99009C705F /* EmojiRatingView.swift */; };
+		99F014722D6D9BF3009C705F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F014712D6D9BF3009C705F /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		99F0146B2D6D86E9009C705F /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		99F0146D2D6D8AEF009C705F /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		99F0146F2D6D8E99009C705F /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		99F014712D6D9BF3009C705F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				99F0146B2D6D86E9009C705F /* AddBookView.swift */,
 				99F0146D2D6D8AEF009C705F /* RatingView.swift */,
 				99F0146F2D6D8E99009C705F /* EmojiRatingView.swift */,
+				99F014712D6D9BF3009C705F /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				99F0145A2D6D768F009C705F /* ContentView.swift in Sources */,
 				99F014582D6D768F009C705F /* BookwormApp.swift in Sources */,
 				99F014692D6D8635009C705F /* Book.swift in Sources */,
+				99F014722D6D9BF3009C705F /* DetailView.swift in Sources */,
 				99F0146E2D6D8AEF009C705F /* RatingView.swift in Sources */,
 				99F014702D6D8E99009C705F /* EmojiRatingView.swift in Sources */,
 				99F0146C2D6D86E9009C705F /* AddBookView.swift in Sources */,
