@@ -15,6 +15,7 @@ class Book {
     var genre: String
     var review: String
     var rating: Int
+    var addedDate: Date = Date.now 
     init(title: String, author: String, genre: String, review: String, rating: Int) {
         self.title = title
         self.author = author

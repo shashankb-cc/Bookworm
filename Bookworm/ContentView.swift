@@ -33,15 +33,23 @@ struct ContentView: View {
                 ForEach(books) { book in
                     NavigationLink(value: book) {
                         HStack {
-                            EmojiRatingView(rating: book.rating)
-                                .font(.callout)
-
+                            
                             VStack(alignment: .leading) {
                                 Text(book.title)
                                     .font(.headline)
+                                    .foregroundStyle(book.rating < 2 ? .red : .green)
                                 Text(book.author)
                                     .foregroundStyle(.secondary)
+                                Text(book.addedDate, style: .date) 
+                                    .font(.caption)
+                                    .foregroundStyle(.tertiary)
                             }
+                            
+                            Spacer()
+                            EmojiRatingView(rating: book.rating)
+                                .font(.callout)
+
+                            
                         }
                     }
                 }
